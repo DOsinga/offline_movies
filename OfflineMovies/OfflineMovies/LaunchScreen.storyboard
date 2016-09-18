@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-O" highlightedImage="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-sB-hyD">
+                                <rect key="frame" x="132" y="293" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Dtr-UY-uKh"/>
+                                    <constraint firstAttribute="height" constant="150" id="SNy-Ag-6KQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAt-43-cjO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CAt-43-cjO" firstAttribute="top" secondItem="ueg-sB-hyD" secondAttribute="bottom" constant="20" id="CMi-Vk-xmG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CAt-43-cjO" secondAttribute="trailing" id="GFG-Kc-1UD"/>
+                            <constraint firstItem="ueg-sB-hyD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ofv-U0-oaf"/>
+                            <constraint firstItem="ueg-sB-hyD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cZd-e3-YxU"/>
+                            <constraint firstItem="CAt-43-cjO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="x6n-jQ-hyt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CAt-43-cjO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CMi-Vk-xmG"/>
+                                <exclude reference="GFG-Kc-1UD"/>
+                                <exclude reference="x6n-jQ-hyt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="CAt-43-cjO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CMi-Vk-xmG"/>
+                                <include reference="GFG-Kc-1UD"/>
+                                <include reference="x6n-jQ-hyt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-O" width="60" height="60"/>
+        <image name="placeholder" width="300" height="437"/>
+    </resources>
+</document>
