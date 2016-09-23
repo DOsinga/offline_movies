@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'OfflineMovies' do
+
+
+pod 'SQLite.swift', '~> 0.10.1'
+pod 'SDWebImage'
+pod 'SDWebImage/WebP'
+
+end
+
